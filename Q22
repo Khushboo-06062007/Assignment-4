@@ -1,0 +1,29 @@
+ANS22
+#include <stdio.h>
+#include<string.h>
+
+int main(){
+	char arr[100];
+	scanf("%s", arr);
+
+	int count_o=0, count_z=0;
+	
+	for(int i=0;i<strlen(arr);i++){
+		
+		if(arr[i] == 'z')
+		count_z++;
+
+		else if(arr[i] == 'o')
+		count_o++;
+	}
+
+	if(count_o == 2*count_z){
+		printf("Yes");
+	}
+	else
+	printf("No");
+
+	return 0;
+
+
+}
